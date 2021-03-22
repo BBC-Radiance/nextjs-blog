@@ -6,7 +6,7 @@ import utilStyles from "../../styles/utils.module.css";
 import { GetStaticProps, GetStaticPaths } from "next";
 
 export const getStaticProps: GetStaticProps = async ({ params }) => {
-    const postData = await getPostData(params.id as string) //⭕️これが下で使用できるようになっている。なぜこの関数の外でも使用できる？
+    const postData = await getPostData(params?.id as string) //⭕️これが下で使用できるようになっている。なぜこの関数の外でも使用できる？
     return {
         props: {
             postData
