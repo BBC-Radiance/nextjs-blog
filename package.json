@@ -3,7 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "NODE_OPTIONS='--inspect' next dev",
+    "comment": "⭕️上を触ったので、必要に応じてただの 'next dev' に戻す。",
     "build": "next build",
     "start": "next start"
   },
